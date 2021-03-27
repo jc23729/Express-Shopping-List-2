@@ -9,3 +9,5 @@ app.get('/dogs', function(request, response) {
 app.listen(3000, function(){
   console.log('App on port 3000');
 }) 
+
+//get the app working
