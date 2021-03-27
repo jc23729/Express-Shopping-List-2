@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+const itemsRoutes = require('./routes/items')
+
+
+
 
 app.get('/dogs', function(request, response) {
   return response.send('Dogs go brk brk');
