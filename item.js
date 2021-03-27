@@ -35,7 +35,19 @@ static find(name){
     }
     return foundItem
 }
+
+// Remove item with matching id
+
+static remove(name){
+    let foundIdx = items.findIndex(v => v.id === name);
+    if (foundIdx === -1) {
+        throw{message: "Item not found", status: 404}
+    }
+    items.splice(foundIdx, 1);
 }
+}
+
+module.exports = Item;
 
 
 
